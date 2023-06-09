@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos4.css"/>
+    <title>pagina de interaccion</title>
+    <script src="./funciones4.js"></script>
+</head>
+<style>
+    body{
+        background-color: rgb(190, 188, 198);
+    }
+    header{
+        text-align: center;
+    }
+    
+</style>
+<body>
+    <a href="./index.html">regresar</a>
+    <header>
+        <h2> Pagina de interaccion </h2>
+    </header>
+
+    <h1> Complete datos segun modelo que desea alquilar </h1>
+
+    <form>
+     
+        <span>Marca</span>
+        <input type="text" id="n1" name="n1" placeholder="Marca auto" required><a class ="aste"> *</a><br><br>
+        <span>Año</span>
+        <input type="text" id="n0" name="n0" placeholder="año" min="2000" max="2023" required><a class ="aste"> *</a><br><br>
+        
+        <span>Cantidad de Asientos</span>
+        <input type="text" id="n2" name="n2" placeholder="asientos" min="2" max="9" required><a class ="aste"> *</a><br><br>
+       
+        <button type="button" onclick="auto()">click para ver disponibilidad</button><br><br>
+        <button type="button" onclick="borrar()">Borrar</button>
+
+
+
+
+    </form>
+    <div id="resultado"></div>
+        
+</body>
+</html>
